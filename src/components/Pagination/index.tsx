@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const StyledPagination = styled.ul`
   list-style: none;
@@ -49,28 +50,28 @@ export const Pagination: FunctionComponent<PaginationProps> = ({
     <StyledPagination>
       {prevPageHref && (
         <li className="pagination__item">
-          <a className="pagination__item__link" href={prevPageHref}>
+          <Link className="pagination__item__link" to={prevPageHref}>
             &laquo;
-          </a>
+          </Link>
         </li>
       )}
       {pageList.map(({ href, isCurrent, pageNumber }) => (
         <li className="pagination__item" key={href}>
-          <a
+          <Link
             className={`pagination__item__link ${
               isCurrent ? 'is--current' : ''
             }`}
-            href={href}
+            to={href}
           >
             {pageNumber}
-          </a>
+          </Link>
         </li>
       ))}
       {nextPageHref && (
         <li className="pagination__item">
-          <a className="pagination__item__link" href={nextPageHref}>
+          <Link className="pagination__item__link" to={nextPageHref}>
             &raquo;
-          </a>
+          </Link>
         </li>
       )}
     </StyledPagination>
