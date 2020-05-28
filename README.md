@@ -1,6 +1,6 @@
 # [mitchellbutler.com](https://mitchellbutler.com)
 
-This is a public copy of the code that I use to deploy my [personal website](https://mitchellbutler.com). The site is built on Gatsby, and uses plugins to aggregate data from my social media profiles.
+This is a public copy of the Gatsby project that I use to deploy my [personal website](https://mitchellbutler.com). The site uses plugins to aggregate data from my social media profiles.
 
 I'm publishing it here because I think it serves as a good example for some of the techniques I've used in Gatsby:
 
